@@ -41,6 +41,11 @@ header nav a {
   color: #1C1B1B;
   text-decoration: none;
 }
+header nav a:hover {
+  transition: 0.3s;
+  border-radius: 16px;
+  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+}
 header .container {
   position: relative;
 }
@@ -144,6 +149,10 @@ header .logo {
   padding: 7px 23px;
   text-decoration: none;
 }
+.main_banner a:hover {
+  background: white;
+  color: #000000;
+}
 .main_banner img {
   position: absolute;
   right: 60px;
@@ -210,6 +219,11 @@ header .logo {
   text-decoration-line: underline;
   color: #000000;
 }
+.people .description a:hover {
+  transition: 0.3s;
+  border-radius: 16px;
+  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+}
 .people .for_img {
   max-width: 385px;
   margin-right: 50px;
@@ -217,6 +231,11 @@ header .logo {
 .people .for_img img {
   width: 100%;
   display: block;
+}
+@media screen and (max-width: 480px) {
+  .people .for_img img {
+    padding-bottom: 10px;
+  }
 }
 @media screen and (max-width: 320px) {
   .people .for_img img {
@@ -228,9 +247,26 @@ header .logo {
   max-width: 498px;
 }
 
+.hover {
+  position: relative;
+  transition: 0.3s;
+  bottom: 0;
+}
+.hover:hover {
+  transition: 0.3s;
+  border-radius: 16px;
+  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+  bottom: -30px;
+}
+
 .main {
   padding-top: 60px;
   padding-bottom: 248px;
+}
+@media screen and (max-width: 437px) {
+  .main {
+    padding-bottom: 0;
+  }
 }
 
 .flex-column {
@@ -330,6 +366,10 @@ header .logo {
   text-decoration-line: underline;
   color: black;
 }
+.best_sellers a:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
 
 .text-center {
   text-align: center;
@@ -378,6 +418,11 @@ header .logo {
   text-decoration-line: underline;
   color: black;
 }
+.culture .description a:hover {
+  transition: 0.3s;
+  border-radius: 16px;
+  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+}
 .culture .for_img {
   max-width: 385px;
   margin-left: 50px;
@@ -424,6 +469,11 @@ header .logo {
   text-decoration-line: underline;
   color: black;
 }
+.power .description a:hover {
+  transition: 0.3s;
+  border-radius: 16px;
+  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+}
 .power .description p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -450,6 +500,11 @@ header .logo {
   width: 100%;
   display: block;
 }
+@media screen and (max-width: 480px) {
+  .power .for_img img {
+    padding-bottom: 10px;
+  }
+}
 @media screen and (max-width: 320px) {
   .power .for_img img {
     max-width: 230px;
@@ -474,6 +529,12 @@ header .logo {
   line-height: 35px;
   color: black;
   width: 338px;
+  margin: auto;
+}
+@media screen and (max-width: 480px) {
+  .features .text-center {
+    padding-bottom: 10px;
+  }
 }
 .features .text-center:nth-child(1):before {
   content: "";
@@ -569,16 +630,11 @@ header .logo {
 .voices .item {
   max-width: 288px;
   text-align: center;
+  padding-top: 15px;
 }
 .voices .item img {
   display: block;
   width: 100%;
-  margin-top: -188px;
-}
-@media screen and (max-width: 767px) {
-  .voices .item img {
-    margin-top: 0;
-  }
 }
 .voices .item h4 {
   font-family: "Roboto", sans-serif;
@@ -619,6 +675,11 @@ header .logo {
   text-decoration-line: underline;
   color: black;
 }
+.voices .container a:hover {
+  transition: 0.3s;
+  border-radius: 16px;
+  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+}
 
 .subscribe {
   padding-top: 79px;
@@ -650,6 +711,12 @@ header .logo {
   margin: auto;
 }
 
+@media screen and (max-width: 437px) {
+  .owl-carousel .owl-item img {
+    width: 63%;
+    margin: auto;
+  }
+}
 @media screen and (max-width: 320px) {
   .owl-carousel .owl-item img {
     max-width: 200px;
@@ -676,9 +743,19 @@ header .logo {
     left: 100px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 702px) {
   .owl-nav .owl-prev {
-    left: 0;
+    left: 85px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .owl-nav .owl-prev {
+    left: 85px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .owl-nav .owl-prev {
+    left: -35px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -693,6 +770,43 @@ header .logo {
   font-size: 50px;
   color: black;
 }
+@media screen and (max-width: 480px) {
+  .owl-nav .owl-prev:before {
+    position: absolute;
+    left: -57px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .owl-nav .owl-prev:before {
+    left: -70px;
+  }
+}
+@media screen and (max-width: 437px) {
+  .owl-nav .owl-prev:before {
+    left: -17px;
+    top: -43px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .owl-nav .owl-prev:before {
+    left: 93px;
+  }
+}
+@media screen and (max-width: 363px) {
+  .owl-nav .owl-prev:before {
+    left: 79px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .owl-nav .owl-prev:before {
+    left: 60px;
+  }
+}
+@media screen and (max-width: 329px) {
+  .owl-nav .owl-prev:before {
+    left: 47px;
+  }
+}
 .owl-nav .owl-next {
   position: absolute;
   right: -76px;
@@ -703,9 +817,19 @@ header .logo {
     right: 100px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 702px) {
   .owl-nav .owl-next {
-    right: 0;
+    right: 85px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .owl-nav .owl-next {
+    right: 60px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .owl-nav .owl-next {
+    right: -35px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -719,6 +843,43 @@ header .logo {
   content: "\f054";
   font-size: 50px;
   color: black;
+}
+@media screen and (max-width: 480px) {
+  .owl-nav .owl-next:before {
+    position: absolute;
+    right: -33px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .owl-nav .owl-next:before {
+    right: -43px;
+  }
+}
+@media screen and (max-width: 437px) {
+  .owl-nav .owl-next:before {
+    right: 9px;
+    top: -43px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .owl-nav .owl-next:before {
+    right: 93px;
+  }
+}
+@media screen and (max-width: 363px) {
+  .owl-nav .owl-next:before {
+    right: 79px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .owl-nav .owl-next:before {
+    right: 60px;
+  }
+}
+@media screen and (max-width: 329px) {
+  .owl-nav .owl-next:before {
+    right: 47px;
+  }
 }
 
 .form {
@@ -734,6 +895,9 @@ header .logo {
 .first_name {
   max-width: 153px;
   margin-bottom: 18px;
+}
+.first_name:hover {
+  background: #F0F0F0;
 }
 
 .last_name {
@@ -782,6 +946,10 @@ button {
   padding: 7px 23px;
   width: 115px;
   margin: auto;
+}
+button:hover {
+  background: white;
+  color: #000000;
 }
 
 .footer {
@@ -852,6 +1020,11 @@ button {
 @media screen and (max-width: 767px) {
   .links {
     margin-right: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .links {
+    margin-left: 15px;
   }
 }
 @media screen and (max-width: 439px) {

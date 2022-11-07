@@ -63,6 +63,11 @@ header {
       line-height: 26px;
       color: #1C1B1B;
       text-decoration: none;
+      &:hover {
+        transition: 0.3s;
+        border-radius: 16px;
+        box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+      }
     }
   }
 
@@ -151,6 +156,10 @@ header {
     border-radius: 100px;
     padding: 7px 23px;
     text-decoration: none;
+    &:hover{
+      background: white;
+      color: #000000;
+    }
   }
   img{
     position: absolute;
@@ -209,6 +218,11 @@ header {
       line-height: 20px;
       text-decoration-line: underline;
       color: #000000;
+      &:hover{
+        transition: 0.3s;
+        border-radius: 16px;
+        box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+      }
     }
   }
   .for_img{
@@ -217,6 +231,9 @@ header {
     img{
       width: 100%;
       display: block;
+      @include max-screen(480px){
+        padding-bottom: 10px;
+      }
       @include max-screen(320px){
         max-width: 230px;
         margin: auto;
@@ -227,9 +244,23 @@ header {
     max-width: 498px;
   }
 }
+.hover{
+  position: relative;
+  transition: 0.3s;
+  bottom: 0;
+  &:hover {
+    transition: 0.3s;
+    border-radius: 16px;
+    box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+    bottom: -30px;
+  }
+}
 .main{
   padding-top: 60px;
   padding-bottom: 248px;
+  @include max-screen(437px){
+    padding-bottom: 0;
+  }
 }
 .flex-column{
   flex-direction: column;
@@ -326,6 +357,10 @@ header {
     text-align: center;
     text-decoration-line: underline;
     color: $main_color;
+    &:hover{
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
   }
 }
 .text-center{
@@ -371,6 +406,11 @@ header {
       text-align: right;
       text-decoration-line: underline;
       color: $main_color;
+      &:hover{
+        transition: 0.3s;
+        border-radius: 16px;
+        box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+      }
     }
   }
   .for_img{
@@ -411,6 +451,11 @@ header {
       line-height: 20px;
       text-decoration-line: underline;
       color: $main_color;
+      &:hover{
+        transition: 0.3s;
+        border-radius: 16px;
+        box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+      }
     }
     p{
       font-family: $main_font;
@@ -437,6 +482,9 @@ header {
     img{
       width:100%;
       display:block;
+      @include max-screen(480px){
+        padding-bottom: 10px;
+      }
       @include max-screen(320px){
         max-width: 230px;
         margin: auto;
@@ -459,6 +507,10 @@ header {
     line-height: 35px;
     color: $main_color;
     width:338px;
+    margin: auto;
+    @include max-screen(480px){
+      padding-bottom: 10px;
+    }
   &:nth-child(1){
   &:before{
     content: "";
@@ -564,13 +616,10 @@ header {
   .item{
     max-width: 288px;
     text-align: center;
+    padding-top: 15px;
     img{
       display: block;
       width: 100%;
-      margin-top: -188px;
-      @include max-screen(767px){
-        margin-top: 0;
-      }
     }
     h4{
       font-family: $main_font;
@@ -610,6 +659,11 @@ header {
     line-height: 21px;
     text-decoration-line: underline;
     color: $main_color;
+      &:hover{
+        transition: 0.3s;
+        border-radius: 16px;
+        box-shadow: 0 4px 35px rgba(0, 0, 0, 0.25);
+      }
   }
   }
 }
@@ -645,6 +699,10 @@ header {
 .owl-carousel{
   .owl-item{
     img{
+      @include max-screen(437px){
+       width: 63%;
+        margin: auto;
+      }
     @include max-screen(320px){
       max-width: 200px;
       margin: auto;
@@ -667,8 +725,14 @@ header {
   @include max-screen(767px){
     left:100px;
   }
-  @include max-screen(420px){
-    left:0;
+  @include max-screen(702px){
+    left:85px;
+  }
+  @include max-screen(650px){
+    left:85px;
+  }
+  @include max-screen(428px){
+    left:-35px;
   }
   @include max-screen(320px){
     left:-50px;
@@ -679,6 +743,29 @@ header {
     content: "\f053";
     font-size: 50px;
     color: $main_color;
+    @include max-screen(480px){
+      position: absolute;
+      left: -57px;
+    }
+    @include max-screen(450px){
+      left: -70px
+    }
+    @include max-screen(437px){
+      left: -17px;
+      top: -43px;
+    }
+    @include max-screen(428px){
+      left: 93px;
+    }
+    @include max-screen(363px){
+      left: 79px;
+    }
+    @include max-screen(340px){
+     left: 60px;
+    }
+    @include max-screen(329px){
+      left: 47px;
+    }
   }
 }
   .owl-next {
@@ -688,8 +775,14 @@ header {
     @include max-screen(767px){
       right:100px;
     }
-    @include max-screen(420px){
-      right:0;
+    @include max-screen(702px){
+      right:85px;
+    }
+    @include max-screen(650px){
+      right:60px;
+    }
+    @include max-screen(428px){
+      right:-35px;
     }
     @include max-screen(320px){
       right:-50px;
@@ -700,6 +793,29 @@ header {
       content: "\f054";
       font-size: 50px;
       color: $main_color;
+      @include max-screen(480px){
+        position: absolute;
+        right: -33px;
+      }
+      @include max-screen(450px){
+        right: -43px;
+      }
+      @include max-screen(437px){
+        right: 9px;
+        top: -43px;
+      }
+      @include max-screen(428px){
+        right: 93px;
+      }
+      @include max-screen(363px){
+        right: 79px;
+      }
+      @include max-screen(340px){
+        right: 60px;
+      }
+      @include max-screen(329px){
+        right: 47px;
+      }
     }
   }
 }
@@ -713,6 +829,9 @@ header {
 .first_name{
   max-width: 153px;
   margin-bottom: 18px;
+  &:hover{
+    background: #F0F0F0
+  }
 }
 .last_name{
   max-width: 153px;
@@ -753,6 +872,10 @@ button{
   padding:7px 23px;
   width: 115px ;
   margin: auto;
+  &:hover{
+    background: white;
+    color: #000000;
+  }
 }
 .footer{
   background-color:#020202;
@@ -815,6 +938,9 @@ button{
   justify-content: space-between;
   @include max-screen(767px){
     margin-right:15px;
+  }
+  @include max-screen(480px){
+    margin-left:15px;
   }
   @include max-screen(439px){
     margin-right: 35px;
